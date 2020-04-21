@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Отзывы
+{% endblock %}
+
+{% block content_title %}
+<h1 class="display-4 col-md-6">
+      Отзывы и предложения:
+    <a href="{{ url_for('posts.create_post')}}" class="btn btn-outline-success" role="button">Новый отзыв</a>
+  </h1>
+{% endblock %}
+
+{% block content %}
+
+    {% for post in pages.items %}
+        <p>
+           <div class="media col-md-6">
+            <p>
+               <img src="..." class="mr-3" alt="...">
+            <div class="media-body">
+            <h5 class="mt-0">{{ post.title }}</h5>
+            {{ post.body }}
+            </div>
+            </p>
+            </div>
+        </p>
+
+    {% endfor %}
+
+  <nav>
+  <ul class="pagination">
+    <li
+            {% if not pages.has_prev %}  class="page-item disabled" {% endif %} >
+        <a class="page-link" href="./?page={{ pages.prev_num }}" tabindex="-1" aria-disabled="true"><<</a>
+    </li>
+      {% for page in pages.iter_pages() %}
+        <li {% if page == pages.page %} class="page-item active" aria-current="page" {% endif %}>
+          <a class="page-link" href="./?page={{ page }}">{{ page }} <span class="sr-only">(current)</span></a>
+        </li>
+      {% endfor %}
+    <li
+            {% if not pages.has_next %}  class="page-item disabled" {% endif %} >
+      <a class="page-link" href="./?page={{ pages.next_num }}">>></a>
+    </li>
+  </ul>
+</nav>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Написать отзыв или предложение
+{% endblock %}
+
+{% block content_title %}
+   <h1 class="display-4 col-md-6">
+      Написать отзыв или предложение:
+  </h1>
+{% endblock %}
+
+{% block content %}
+
+    <div class="col-md-6">
+        <form action="{{ url_for('posts.create_post')}}" method="POST">
+
+            {% for field in form %}
+            <div class="form-group">
+                {{ field.label(class="form-control-label") }}
+                {{ field(class="form-control") }}
+            </div>
+            {% endfor %}
+
+            <button type="submit" class="btn btn-outline-success">Создать</button>
+        </form>
+    </div>
+
+{% endblock %}

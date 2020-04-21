@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>
+
+        {% block title %}
+
+        {% endblock %} | Ортодонтия
+
+    </title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href=" {{ url_for('index') }} ">Ортодонтия</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('index') }}">Главная</a>
+          </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Услуги</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('posts.index') }}">Отзывы</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Контакты</a>
+      </li>
+        <form class="form-inline">
+            <button class="btn btn-outline-success" type="button">Запишитесь на консультацию!</button>
+        </form>
+    </ul>
+  </div>
+</nav>
+
+
+{% block content_title %}
+
+{% endblock %}
+
+<p>
+{% block content %}
+
+{% endblock %}
+</p>
+
+</body>
+</html>
