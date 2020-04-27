@@ -36,10 +36,20 @@
         <form class="form-inline">
             <button class="btn btn-outline-success" type="button">Запишитесь на консультацию!</button>
         </form>
-        <form class="form-inline">
-      <button class="btn btn-outline-success" type="button">Login</button>
-    </form>
     </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+          {% if current_user.has_role('admin') %}
+          <a href="/admin" class="btn btn-outline-success my-2 my-sm-0" type="submit">Admin</a>
+          {% endif %}
+          {% if not current_user.has_role('admin') %}
+          <a href="/login" class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</a>
+          {% endif %}
+          {% if current_user.has_role('admin') %}
+          <a href="/logout" class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</a>
+          {% endif %}
+      </form>
+
   </div>
 </nav>
 

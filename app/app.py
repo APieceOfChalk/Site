@@ -17,11 +17,15 @@ from flask import redirect, url_for, request
 app = Flask(__name__)
 app.config.from_object(Configuration)
 
+
+app.config['SECURITY_REGISTERABLE'] = True
+
 db = SQLAlchemy(app)
 
 migrate = Migrate(app, db)
 manager = Manager(app)
 manager.add_command('db', MigrateCommand)
+
 
 ### ADMIN ###
 from models import *

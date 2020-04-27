@@ -7,3 +7,6 @@ class Configuration(object):
     ### FLASK-SECURITY ###
     SECURITY_PASSWORD_SALT = 'salt'
     SECORITY_PASSWORD_HASH = 'bcrypt'
+
+
+
