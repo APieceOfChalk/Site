@@ -16,6 +16,8 @@ from flask import redirect, url_for, request
 
 from flask_mail import Mail
 
+
+
 app = Flask(__name__)
 app.config.from_object(Configuration)
 mail = Mail(app)

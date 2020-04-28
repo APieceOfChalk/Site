@@ -12,6 +12,7 @@ class Configuration(object):
     SECORITY_PASSWORD_HASH = 'bcrypt'
 
     SECURITY_REGISTERABLE = True
+    SECURITY_CONFIRMABLE = True
 
     # Flask-Mail settings
     MAIL_USERNAME = os.getenv('MAIL_USERNAME', 'forsite2851@gmail.com')

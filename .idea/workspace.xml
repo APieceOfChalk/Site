@@ -2,36 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b57fdc8-8911-45f6-84ea-612b4a1b1b21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/templates/security/send_confirmation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyJWT-1.7.1.dist-info/AUTHORS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyJWT-1.7.1.dist-info/INSTALLER" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyJWT-1.7.1.dist-info/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyJWT-1.7.1.dist-info/METADATA" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyJWT-1.7.1.dist-info/RECORD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyJWT-1.7.1.dist-info/WHEEL" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyJWT-1.7.1.dist-info/entry_points.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyJWT-1.7.1.dist-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jwt/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jwt/__main__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jwt/algorithms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jwt/api_jws.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jwt/api_jwt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jwt/compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jwt/contrib/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jwt/contrib/algorithms/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jwt/contrib/algorithms/py_ecdsa.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jwt/contrib/algorithms/pycrypto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jwt/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jwt/help.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jwt/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/Scripts/pyjwt.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/posts/blueprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/blueprint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/security/login_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/security/login_user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/security/register_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/security/register_user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,10 +55,7 @@
       <recent name="C:\Users\axund\Site\app\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Site/app/posts/templates/posts/index.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.models">
     <configuration name="login_user.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Site/app/templates/security/login_user.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -153,13 +125,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="models" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Site" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/models.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.models" />
         <item itemvalue="Python.manage" />
         <item itemvalue="Python.app" />
         <item itemvalue="JavaScript Debug.login_user.html" />
-        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +192,7 @@
       <workItem from="1587747286803" duration="669000" />
       <workItem from="1587749883608" duration="600000" />
       <workItem from="1587997397320" duration="19063000" />
-      <workItem from="1588074317057" duration="19667000" />
+      <workItem from="1588074317057" duration="25016000" />
     </task>
     <task id="LOCAL-00001" summary="Requirements added">
       <created>1587997559198</created>
@@ -221,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588017849372</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="email added">
+      <created>1588099094456</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588099094456</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,33 +232,34 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Requirements added" />
     <MESSAGE value="register added" />
-    <option name="LAST_COMMIT_MESSAGE" value="register added" />
+    <MESSAGE value="email added" />
+    <option name="LAST_COMMIT_MESSAGE" value="email added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="961" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587749727048">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="961" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587749727048" />
-    <state x="905" y="295" key="CommitChangelistDialog2" timestamp="1588017848614">
+    <state x="905" y="295" key="CommitChangelistDialog2" timestamp="1588099093548">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="905" y="295" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1588017848614" />
-    <state width="2517" height="251" key="GridCell.Tab.0.bottom" timestamp="1588096055564">
+    <state x="905" y="295" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1588099093548" />
+    <state width="2517" height="251" key="GridCell.Tab.0.bottom" timestamp="1588107435504">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="251" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588096055564" />
-    <state width="2517" height="251" key="GridCell.Tab.0.center" timestamp="1588096055564">
+    <state width="2517" height="251" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588107435504" />
+    <state width="2517" height="251" key="GridCell.Tab.0.center" timestamp="1588107435504">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="251" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588096055564" />
-    <state width="2517" height="251" key="GridCell.Tab.0.left" timestamp="1588096055564">
+    <state width="2517" height="251" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588107435504" />
+    <state width="2517" height="251" key="GridCell.Tab.0.left" timestamp="1588107435504">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="251" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588096055564" />
-    <state width="2517" height="251" key="GridCell.Tab.0.right" timestamp="1588096055564">
+    <state width="2517" height="251" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588107435504" />
+    <state width="2517" height="251" key="GridCell.Tab.0.right" timestamp="1588107435504">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="251" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588096055564" />
+    <state width="2517" height="251" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588107435504" />
     <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1587243718622">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -287,10 +289,21 @@
     </state>
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1587124870609" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/main.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Site$app.coverage" NAME="app Coverage Results" MODIFIED="1588084643927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
-    <SUITE FILE_PATH="coverage/Site$models.coverage" NAME="models Coverage Results" MODIFIED="1587997955114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
-    <SUITE FILE_PATH="coverage/Site$main.coverage" NAME="main Coverage Results" MODIFIED="1588096055557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/Site$models.coverage" NAME="models Coverage Results" MODIFIED="1588104381341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/Site$main.coverage" NAME="main Coverage Results" MODIFIED="1588107435498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/Site$view.coverage" NAME="view Coverage Results" MODIFIED="1587236338657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/Site$manage.coverage" NAME="manage Coverage Results" MODIFIED="1588093711697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/Site$config.coverage" NAME="config Coverage Results" MODIFIED="1587998123415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
