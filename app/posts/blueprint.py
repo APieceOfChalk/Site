@@ -37,6 +37,7 @@ def create_post():
 
 
 
+
 @posts.route('/')
 def index():
     page = request.args.get('page')

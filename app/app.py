@@ -14,11 +14,12 @@ from flask_security import current_user
 
 from flask import redirect, url_for, request
 
+from flask_mail import Mail
+
 app = Flask(__name__)
 app.config.from_object(Configuration)
+mail = Mail(app)
 
-
-app.config['SECURITY_REGISTERABLE'] = True
 
 db = SQLAlchemy(app)
 
@@ -48,8 +49,11 @@ class HomeAdminView(AdminMixin, AdminIndexView):
 
 
 admin = Admin(app, 'SiteApp', url='/', index_view=HomeAdminView(name='Home'))
-admin.add_view(AdminView(Post, db.session))
+admin.add_view(ModelView(Post, db.session))
 
 ### FLASK-SECURITY ###
 user_datastore = SQLAlchemySessionUserDatastore(db.session, User, Role)
 security = Security(app, user_datastore)
+
+admin.add_view(AdminView(User, db.session()))
+
