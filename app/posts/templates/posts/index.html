@@ -14,17 +14,11 @@
 {% block content %}
 
     {% for post in pages.items %}
-        <p>
-           <div class="media col-md-6">
-            <p>
-               <img src="..." class="mr-3" alt="...">
-            <div class="media-body">
+           <div class="border border-success col-md-4">
             <h5 class="mt-0">{{ post.title }}</h5>
+               <hr class="my-9">
             {{ post.body }}
             </div>
-            </p>
-            </div>
-        </p>
 
     {% endfor %}
 

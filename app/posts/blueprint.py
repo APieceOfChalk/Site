@@ -11,14 +11,13 @@ from flask import redirect
 from flask import url_for
 
 from flask_security import login_required
-posts = Blueprint('posts', __name__, template_folder='templates')
 
+posts = Blueprint('posts', __name__, template_folder='templates')
 
 
 @posts.route('/create', methods=['POST', 'GET'])
 @login_required
 def create_post():
-
     if request.method == 'POST':
         title = request.form['title']
         body = request.form['body']
@@ -36,8 +35,6 @@ def create_post():
     return render_template('posts/create_post.html', form=form)
 
 
-
-
 @posts.route('/')
 def index():
     page = request.args.get('page')
@@ -51,3 +48,6 @@ def index():
     pages = posts.paginate(page=page, per_page=12)
 
     return render_template('posts/index.html', posts=posts, pages=pages)
+
+
+

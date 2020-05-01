@@ -59,3 +59,4 @@ security = Security(app, user_datastore)
 
 admin.add_view(AdminView(User, db.session()))
 
+admin.add_view(AdminView(Consultation, db.session()))
