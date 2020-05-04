@@ -3,6 +3,10 @@ from datetime import datetime
 
 from flask_security import UserMixin, RoleMixin
 
+from time import time
+import jwt
+from app import app
+
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)

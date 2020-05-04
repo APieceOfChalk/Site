@@ -9,9 +9,11 @@ from app import db
 from flask import redirect
 from flask import url_for
 
-from models import Consultation
+from models import Consultation, User
 
-from wtforms import ValidationError
+from flask_mail import Message
+from app import mail
+
 
 @app.route('/')
 def index():
@@ -28,6 +30,8 @@ def note():
     if request.method == 'POST':
         name = request.form['name']
         mobile = request.form['mobile']
+        global dct
+        dct = {'name': name, 'mobile': mobile}
         try:
             number = Consultation(name=name, mobile=mobile)
             db.session.add(number)
@@ -42,4 +46,11 @@ def note():
 
 @app.route('/note/success')
 def success():
+    mobile = dct['mobile']
+    name = dct['name']
+    msg = Message("Новая запись", recipients=["forsite2851@gmail.com"])
+    msg.body = f'Телефон: {mobile}\nИмя: {name}'
+    mail.send(msg)
     return render_template('success.html')
+
+

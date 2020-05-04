@@ -13,6 +13,9 @@ class Configuration(object):
 
     SECURITY_REGISTERABLE = True
     SECURITY_CONFIRMABLE = True
+    SECURITY_RECOVERABLE = True
+    SECURITY_SEND_PASSWORD_RESET_NOTICE_EMAIL = True
+
 
     # Flask-Mail settings
     MAIL_USERNAME = os.getenv('MAIL_USERNAME', 'forsite2851@gmail.com')
@@ -21,6 +24,7 @@ class Configuration(object):
     MAIL_PORT = int(os.getenv('MAIL_PORT', '465'))
     MAIL_USE_SSL = int(os.getenv('MAIL_USE_SSL', True))
     SECURITY_EMAIL_SENDER = os.getenv('SECURITY_EMAIL_SENDER', 'forsite2851@gmail.com')
+    MAIL_DEFAULT_SENDER = os.getenv('MAIL_DEFAULT_SENDER', 'forsite2851@gmail.com')
 
     # Flask-User settings
     USER_APP_NAME = "AppName"  # Used by email templates
