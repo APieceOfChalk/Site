@@ -1,5 +1,6 @@
 from flask import Blueprint
 from flask import render_template
+from flask_login import current_user
 
 from models import Post
 from .forms import PostForm
@@ -19,11 +20,10 @@ posts = Blueprint('posts', __name__, template_folder='templates')
 @login_required
 def create_post():
     if request.method == 'POST':
-        title = request.form['title']
+        name = current_user.name
         body = request.form['body']
-
         try:
-            post = Post(title=title, body=body)
+            post = Post(name=name, body=body)
             db.session.add(post)
             db.session.commit()
         except:

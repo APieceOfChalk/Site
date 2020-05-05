@@ -3,14 +3,10 @@ from datetime import datetime
 
 from flask_security import UserMixin, RoleMixin
 
-from time import time
-import jwt
-from app import app
-
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(140))
+    name = db.Column(db.String(100), nullable=False)
     body = db.Column(db.Text)
     created = db.Column(db.DateTime, default=datetime.now())
 
@@ -19,7 +15,6 @@ class Post(db.Model):
 
 
 ### FLASK-SECURITY ###
-
 roles_users = db.Table('roles_users',
                        db.Column('user_id', db.Integer(), db.ForeignKey('user.id')),
                        db.Column('role_id', db.Integer(), db.ForeignKey('role.id')),
@@ -28,6 +23,7 @@ roles_users = db.Table('roles_users',
 
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer(), primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(100), nullable=False, unique=True)
     password = db.Column(db.String(255), nullable=False)
     confirmed_at = db.Column(db.DateTime())
