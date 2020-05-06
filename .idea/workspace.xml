@@ -20,11 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b57fdc8-8911-45f6-84ea-612b4a1b1b21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/migrations/versions/0a665bb02483_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/posts/blueprint.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/blueprint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/posts/templates/posts/create_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/templates/posts/create_post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/posts/templates/posts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/posts/templates/posts/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +204,7 @@
       <workItem from="1588607615691" duration="13346000" />
       <workItem from="1588689346205" duration="9393000" />
       <workItem from="1588705524936" duration="4890000" />
-      <workItem from="1588774350542" duration="7509000" />
+      <workItem from="1588774350542" duration="7814000" />
     </task>
     <task id="LOCAL-00001" summary="Requirements added">
       <created>1587997559198</created>
@@ -274,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588709695922</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Rating added">
+      <created>1588783624396</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1588783624396</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +303,8 @@
     <MESSAGE value="Consultation added" />
     <MESSAGE value="Reset password added" />
     <MESSAGE value="Some changes added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some changes added" />
+    <MESSAGE value="Rating added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rating added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1022" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588624950253">
@@ -312,26 +315,26 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="961" y="436" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588452228574" />
-    <state x="905" y="295" key="CommitChangelistDialog2" timestamp="1588709694999">
+    <state x="905" y="295" key="CommitChangelistDialog2" timestamp="1588783623503">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="905" y="295" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1588709694999" />
-    <state width="2517" height="251" key="GridCell.Tab.0.bottom" timestamp="1588783105021">
+    <state x="905" y="295" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1588783623503" />
+    <state width="2517" height="251" key="GridCell.Tab.0.bottom" timestamp="1588783666716">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="251" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588783105021" />
-    <state width="2517" height="251" key="GridCell.Tab.0.center" timestamp="1588783105021">
+    <state width="2517" height="251" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588783666716" />
+    <state width="2517" height="251" key="GridCell.Tab.0.center" timestamp="1588783666716">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="251" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588783105021" />
-    <state width="2517" height="251" key="GridCell.Tab.0.left" timestamp="1588783105021">
+    <state width="2517" height="251" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588783666716" />
+    <state width="2517" height="251" key="GridCell.Tab.0.left" timestamp="1588783666716">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="251" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588783105021" />
-    <state width="2517" height="251" key="GridCell.Tab.0.right" timestamp="1588783105021">
+    <state width="2517" height="251" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588783666716" />
+    <state width="2517" height="251" key="GridCell.Tab.0.right" timestamp="1588783666716">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="251" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588783105021" />
+    <state width="2517" height="251" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588783666716" />
     <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1587243718622">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -368,6 +371,6 @@
     <SUITE FILE_PATH="coverage/Site$blueprint.coverage" NAME="blueprint Coverage Results" MODIFIED="1587998530920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/posts" />
     <SUITE FILE_PATH="coverage/Site$app.coverage" NAME="app Coverage Results" MODIFIED="1588084643927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/Site$view.coverage" NAME="view Coverage Results" MODIFIED="1587236338657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
-    <SUITE FILE_PATH="coverage/Site$main.coverage" NAME="main Coverage Results" MODIFIED="1588783503316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/Site$main.coverage" NAME="main Coverage Results" MODIFIED="1588783666710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
   </component>
 </project>
