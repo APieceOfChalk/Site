@@ -22,8 +22,9 @@ def create_post():
     if request.method == 'POST':
         name = current_user.name
         body = request.form['body']
+        mark = request.form["inlineRadioOptions"]
         try:
-            post = Post(name=name, body=body)
+            post = Post(name=name, body=body, mark=mark)
             db.session.add(post)
             db.session.commit()
         except:

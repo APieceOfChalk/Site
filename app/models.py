@@ -8,6 +8,7 @@ class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     body = db.Column(db.Text)
+    mark = db.Column(db.Integer, nullable=False)
     created = db.Column(db.DateTime, default=datetime.now())
 
     def __repr__(self):
