@@ -20,7 +20,7 @@ from forms import ExtendedRegisterForm
 
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='templates/images')
 app.config.from_object(Configuration)
 mail = Mail(app)
 

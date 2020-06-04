@@ -10,18 +10,15 @@
 
 {% block content %}
 
-   <div class="jumbotron jumbotron-fluid-light col-md-6" style="background-color: #FFFFFF;">
-  <h1 class="display-4">
-      Главная
-  </h1>
-  <p>
-      Здесь будет основная информация и ссылки на остальные страницы. Готова страница "Отзывы".
-      Есть админка.
-      Вход в отзывах на кнопке Новый отзыв.
-      Регистрация.
-      Запись на консультацию.
-  </p>
-    <button type="button" class="btn btn-outline-success">Тут пока ничего нет.</button>
+   <div class="jumbotron" style="background-color: #FFFFFF;">
+  <div class="container">
+    <p><img src="images/IMG_2377.png" width="550" height="550" class="img-responsive rounded mx-auto d-block"></p>
+    <h1 class="display-3 text-center">Dr.Ulker</h1>
+      <p class="text-center">Сайт-портфолио. Тут должна быть какая-то главная информация, но у меня не хватило уже фантазии, поэтому просто добро пожаловать.</p>
+      <form class="form-inline">
+            <a href="{{ url_for('note') }}" class="btn btn-success mx-auto">Запишитесь на консультацию!</a>
+        </form>
+  </div>
 </div>
 
 

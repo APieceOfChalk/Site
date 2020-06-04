@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+
+   Контакты
+
+{% endblock %}
+
+{% block content_title %}
+   <h1 class="display-4 col-md-6">Контактная информация:</h1>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="media col-md-6">
+   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaf1a1136774571924cfe4795f83983d87e980a163cbc5e202e9a7fd67da7d127&amp;width=820&amp;height=583&amp;lang=ru_RU&amp;scroll=true"></script>
+  <div class="media-body col-md-6">
+     <h5 class="mt-0">Адреса, где я работаю:</h5>
+     <p>Fulldent. The art of precision. Венгерская клиника по адресу улица Новаторов, дом 34, корпус 7.</p>
+     <p>Стоматология А-медик по адресу улица 1-я Дубровская, дом 13.</p>
+      <h5 class="mt-0">Электронная почта:</h5>
+      <p>Ulkerdent@gmail.com</p>
+      <h5 class="mt-0">Телефон:</h5>
+      <p>+79197733224</p>
+     <h5 class="mt-0">Социальные сети:</h5>
+      <a href="https://www.instagram.com/ortodont.ulker">Instagram</a>
+      <a href="https://api.whatsapp.com/send?phone=79197733224&text=&source=&data=&app_absent=">WhatsApp</a>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -13,7 +13,6 @@ class Configuration(object):
 
     SECURITY_REGISTERABLE = True
     SECURITY_CONFIRMABLE = True
-    SECURITY_CONFIRM_URL = '/login/'
     SECURITY_RECOVERABLE = True
     SECURITY_SEND_PASSWORD_RESET_NOTICE_EMAIL = True
 
@@ -28,4 +27,4 @@ class Configuration(object):
     MAIL_DEFAULT_SENDER = os.getenv('MAIL_DEFAULT_SENDER', 'forsite2851@gmail.com')
 
     # Flask-User settings
-    USER_APP_NAME = "AppName"  # Used by email templates
+    USER_APP_NAME = "AppName"

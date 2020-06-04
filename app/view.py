@@ -25,6 +25,21 @@ def page_not_found(e):
     return render_template('404.html'), 404
 
 
+@app.route('/contacts')
+def contacts():
+    return render_template('contacts.html')
+
+
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.html')
+
+
+@app.route('/services')
+def services():
+    return render_template('services.html')
+
+
 @app.route('/note', methods=['POST', 'GET'])
 def note():
     if request.method == 'POST':
